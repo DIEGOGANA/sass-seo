@@ -1,0 +1,33 @@
+/*footer*/
+footer{
+        
+    background-color: #0cbaba;
+    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+    color: honeydew;
+    padding: 20px;
+    padding-left: 30px;
+    font-size: 25px;
+    margin: 20px;
+    .facebook{
+        margin-top: 10px;
+        width: 3%;
+    }
+    .redes{
+        padding-left: 20px;
+        color:honeydew
+    }
+}
+
+// maps
+/*maps*/
+$redes:(
+    facebook: blue,
+    instagram: yellow,
+    whatsapp: green,
+);
+@each $clave, $valor in $redes {
+    .boton-#{$clave} {
+        background-color: $valor;
+        border: $valor;
+    }
+}

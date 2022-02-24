@@ -1,0 +1,37 @@
+//  extend
+/*aside
+extend*/
+
+.card1 {
+    border: 5px pink;
+    background-color: violet;
+   
+}
+.card2 {
+    @extend .card1;
+    border: 5px blue;
+    background-color: darkorange;
+}
+.card3 {
+    @extend.card1;
+    border: 5px greenyellow;
+    background-color: pink;
+
+
+}
+//mixin
+/*mixin*/
+@mixin tamaño ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+.caja1{
+    @include tamaño (400px, 800px)
+}
+.caja2{
+    @include tamaño (350px, 700px )
+}
+.caja3{
+    @include tamaño (380px, 760px)
+}
+    

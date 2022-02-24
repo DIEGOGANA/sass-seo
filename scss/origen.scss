@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Shadows Into Light', cursive
+}
+
+#body{
+    background-color: aquamarine;
+}
+
+
+@import "header";
+@import "section";
+@import "aside";
+@import "footer";
+     
